@@ -10,7 +10,7 @@
 
   "browser_action": {
     "default_icon": "assets/img/ico.png",
-    "default_title": "ChatWork Task Notification"
+    "default_title": "ChatWork Tasks Notification"
   },
 
   "permissions": [
@@ -25,5 +25,13 @@
       "assets/js/jquery.min.js",
       "assets/js/cw-tasks-notification.js"
     ]
-  }
+  },
+
+  "content_scripts": [{
+    "matches": ["*://www.chatwork.com/*"],
+    "js": [
+      "assets/js/jquery.min.js",
+      "assets/js/cw-tasks-notif-content.js"
+    ]
+  }]
 }
