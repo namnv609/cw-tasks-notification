@@ -3,7 +3,7 @@ $(function() {
   var currentUserId;
 
   chrome.webRequest.onBeforeRequest.addListener(function(requestDetail) {
-    var cwInitUrlRegEx = /^.*www\.chatwork\.com\/gateway.php\?cmd\=init_load.*$/g;
+    var cwInitUrlRegEx = /^.*www\.chatwork\.com\/gateway.php.*myid\=[0-9]+.*_t\=[a-f0-9]+.*$/g;
     var cwTaskActionRegEx = /^.*www\.chatwork\.com\/gateway.php\?cmd\=([a-z]+)_task.*$/g;
 
     if (requestDetail.type && requestDetail.type === "xmlhttprequest") {
