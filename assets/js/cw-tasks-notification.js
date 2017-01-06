@@ -31,6 +31,13 @@ $(function() {
   });
 
   chrome.browserAction.setBadgeBackgroundColor({color: "#FF0000"});
+
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    chrome.tabs.create({
+      url: chrome.extension.getURL('settings-page.html'),
+      selected: true
+    });
+  });
 });
 
 /**

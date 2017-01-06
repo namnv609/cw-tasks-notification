@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatWork Tasks Notification - Settings page</title>
+    <link rel="stylesheet" href="assets/css/milligram.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/settings-page.css" type="text/css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/settings-page.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h4 id="ext-title">ChatWork Tasks Notification</h4>
+    <p class="label-inline msg-box">Settings saved!</p>
+    <form action="#">
+      <fieldset>
+        <label for="alarm-interval">Alarm interval</label>
+        <select name="alarm-interval" id="alarm-interval">
+          <option value="0">---Never---</option>
+          <option value="15">15 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="45">45 minutes</option>
+          <option value="60">60 minutes</option>
+        </select>
+        <button class="button-primary" id="btn-save-settings">Save</button>
+      </fieldset>
+    </form>
+    <p id="copyright">
+      Copyright &copy;<span id="current-year">YYYY</span> by <a href="https://namnv609.cf" target="_blank">NamNV609</a>
+    </p>
+  </div>
+</body>
+</html>

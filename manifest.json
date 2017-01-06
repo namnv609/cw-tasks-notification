@@ -17,7 +17,9 @@
     "webRequest",
     "tabs",
     "webNavigation",
-    "*://www.chatwork.com/*"
+    "*://www.chatwork.com/*",
+    "notifications",
+    "storage"
   ],
 
   "background": {
@@ -33,5 +35,9 @@
       "assets/js/jquery.min.js",
       "assets/js/cw-tasks-notif-content.js"
     ]
-  }]
+  }],
+
+  "web_accessible_resources": [
+    "assets/img/*.png"
+  ]
 }
