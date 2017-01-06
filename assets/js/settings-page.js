@@ -5,7 +5,7 @@ $(function() {
   $("span#current-year").text(today.getFullYear());
 
   chromeStorage.get('CW_TASKS_NOTIFICATION_SETTINGS', function(extensionSettings) {
-    extensionSettings = extensionSettings.CW_TASKS_NOTIFICATION_SETTINGS
+    extensionSettings = extensionSettings.CW_TASKS_NOTIFICATION_SETTINGS;
     $("#alarm-interval").val(extensionSettings.alarmInterval);
   });
 
